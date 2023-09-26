@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href ="assets/style.css"></link>
+</head>
+<body>
+    <h1 id="title" >Weather Dashboard</h1>
+    <main>
+        <h2 id="current-city">current city
+            <i>icon image</i>
+        </h2>
+    
+    </main>
+    <aside>
+        <div id="search">
+            <h2>Search For A City</h2>
+            <input id="search-bar" type="text" placeholder="San Diego">
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="search-hist">
+            <ul id="city-list"></ul>
+        </div>
+    </aside>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"
+  ></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>

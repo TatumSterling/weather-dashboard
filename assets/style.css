@@ -1,0 +1,39 @@
+#title {
+    text-align: center;
+    background-color:lightskyblue;
+    padding: 50px;
+}
+
+main {
+    float: right;
+    border: solid black;
+    width: 75%;
+    height: 100vh;
+
+}
+
+#current-city {
+    border: solid black;
+    right: 100%;   
+    height: 20%;
+}
+
+#search {
+    width: 23%;
+    height: 100vh;
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+#search-bar {
+    height: 30px;
+}
+
+#search-btn {
+    width: 50%;
+    position: relative;
+    left: 20%;
+    margin: 20px;
+
+}
