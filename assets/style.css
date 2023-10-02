@@ -1,55 +1,69 @@
-#title {
-    text-align: center;
-    background-color:lightskyblue;
-    padding: 50px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/weatherboard-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-attachment: fixed;
+    color: black; 
 }
 
+header {
+
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+    border: solid black;
+}
+
+#title {
+    text-align: center;
+}
 main {
     float: right;
     border: solid black;
     width: 75%;
     height: 100vh;
-
 }
 
 #current-weather-container {
     border: solid black;
-    right: 100%;   
+    text-align: center;
 
 }
 
 #search {
     width: 23%;
     height: 100vh;
-
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 
 #search-bar {
     height: 30px;
+    margin: 20px;
 }
 
 #search-btn {
     width: 50%;
-    position: relative;
-    left: 20%;
     margin: 20px;
-
 }
-
-
 
 #future-container {
     display: flex;
     flex-direction: row;
-    border: solid black;
 }
 
 .future-card {
     padding: 20px;
-    border: solid pink;
+    border: solid black;
     width: 20%;
+    margin: 10px;
+
 }
 
 .city-history {
@@ -58,7 +72,7 @@ main {
     width: 75%;
     justify-content: center;
     margin: 10px;
-    background-color: lightblue;
+
 }
 
 #search-hist {
