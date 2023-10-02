@@ -50,6 +50,12 @@ function renderLastCity() {
             var listItem = $("<button>").text(value);
             listItem.addClass("city-history");
 
+            (function(cityName) {
+                listItem.on("click", function() {
+                    convertToCoord(cityName);
+                });
+            })(value);
+
             // Append the button to the search history
             $("#search-hist").append(listItem); 
         }
