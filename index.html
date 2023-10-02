@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1 id="title" >Weather Dashboard</h1>
-    <main>
+    <main id="page-container">
         <div id="current-weather-container">
             <h2 id="current-city"></h2>
             <h2 id="todays-date"></h2>
@@ -24,33 +24,43 @@
         <div id = "future-container">
             <div class="future-card">
                 <p class = "future-date" id = "future-date-1"></p>
+                <p class = "future-condition" id="future-condition-1"></p>
                 <img id = "future-icon-1" src="" alt="">
                 <p class = "future-temp" id = "future-temp-1"></p>
                 <p class = "future-humidity" id = "future-humid-1"></p>
+                <p class=" future-wind" id="future-wind-1"></p>
             </div>
             <div class="future-card">
                 <p class = "future-date" id = "future-date-2"></p>
+                <p class = "future-condition" id="future-condition-2"></p>
                 <img id = "future-icon-2" src="" alt="">
                 <p class = "future-temp" id = "future-temp-2"></p>
                 <p class = "future-humidity" id = "future-humid-2"></p>
+                <p class=" future-wind" id="future-wind-2"></p>
             </div>  
             <div class="future-card">
                 <p class = "future-date" id = "future-date-3"></p>
+                <p class = "future-condition" id="future-condition-3"></p>
                 <img id = "future-icon-3" src="" alt="">
                 <p class = "future-temp" id = "future-temp-3"></p>
                 <p class = "future-humidity" id = "future-humid-3"></p>
+                <p class=" future-wind" id="future-wind-3"></p>
             </div>
             <div class="future-card">
                 <p class = "future-date" id = "future-date-4"></p>
+                <p class = "future-condition" id="future-condition-4"></p>
                 <img id = "future-icon-4" src="" alt="">
                 <p class = "future-temp" id = "future-temp-4"></p>
                 <p class = "future-humidity" id = "future-humid-4"></p>
+                <p class=" future-wind" id="future-wind-4"></p>
             </div>
             <div class="future-card">
                 <p class = "future-date" id = "future-date-5"></p>
+                <p class = "future-condition" id="future-condition-5"></p>
                 <img id = "future-icon-5" src="" alt="">
                 <p class = "future-temp" id = "future-temp-5"></p>
                 <p class = "future-humidity" id = "future-humid-5"></p>
+                <p class=" future-wind" id="future-wind-5"></p>
             </div>
         </div>
     
@@ -60,10 +70,13 @@
             <h2>Search For A City</h2>
             <input id="search-bar" type="text" placeholder="City name">
             <button id="search-btn">Search</button>
+            <div id="search-hist">
+
+            </div>
+        
         </div>
-        <div id="search-hist">
-            <ul id="city-list"></ul>
-        </div>
+
+
     </aside>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
