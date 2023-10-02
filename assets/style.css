@@ -15,7 +15,6 @@ header {
     background-color: white;
     text-align: center;
     padding: 50px;
-    border: solid black;
 }
 
 #title {
@@ -23,7 +22,6 @@ header {
 }
 main {
     float: right;
-    border: solid black;
     width: 75%;
     height: 100vh;
 }
@@ -31,6 +29,9 @@ main {
 #current-weather-container {
     border: solid black;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 20px;
+    border-radius: 25px;
 
 }
 
@@ -40,6 +41,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: solid black;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 10px;
 
 }
 
@@ -51,6 +56,8 @@ main {
 #search-btn {
     width: 50%;
     margin: 20px;
+    border: solid black;
+    border-radius: 5px;
 }
 
 #future-container {
@@ -63,16 +70,25 @@ main {
     border: solid black;
     width: 20%;
     margin: 10px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 20px;
+    border-radius: 25px;
 
 }
 
 .city-history {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 100%;
     justify-content: center;
     margin: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid black;
+    border-radius: 5px;
+}
 
+.city-history:hover {
+    background-color: #e4f2f7;
 }
 
 #search-hist {
