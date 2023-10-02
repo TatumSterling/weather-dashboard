@@ -104,9 +104,9 @@ var getWeather = function (latitude, longitude) {
                 var cityName = data.city.name;
 
                 // adding html content for current weather card
-                tempElMain.html("Temperature: ", temp, "°F");
-                humidityElMain.html("Humidity: ", humid, "%");
-                windElMain.html("Wind Speed: ", wind, "mph");
+                tempElMain.html("Temperature: "+ temp+ "°F");
+                humidityElMain.html("Humidity: "+ humid+ "%");
+                windElMain.html("Wind Speed: "+ wind+ "mph");
 
 
                 $(cityNameEl).html(cityName);
