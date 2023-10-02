@@ -91,15 +91,37 @@ var getWeather = function (latitude, longitude) {
                 var iconUrl = "https://openweathermap.org/img/wn/"+ icon +"@2x.png";
                 iconMain.attr("src", iconUrl);
 
-                for (var i =7; i<36; i+=7) {
-                    
-                var conditionFuture = data.list[i].weather[0].description;
-                var iconFuture = data.list[i].weather[0].icon;
-                var humidFuture = data.list[i].main.humidity;
-                var tempFuture = data.list[i].main.temp;
-                var windFuture = data.list[i].wind.speed;
+                for (var i = 7; i < 36; i += 7) {
+                    // Construct the IDs for the HTML elements
+                    var dateId = "future-date-" + (i / 7);
+                    var iconId = "future-icon-" + (i / 7);
+                    var tempId = "future-temp-" + (i / 7);
+                    var humidId = "future-humid-" + (i / 7);
+                  
+                    // Get the data for this iteration
+                    var conditionFuture = data.list[i].weather[0].description;
+                    var iconFuture = data.list[i].weather[0].icon;
+                    var humidFuture = data.list[i].main.humidity;
+                    var tempFuture = data.list[i].main.temp;
+                    var windFuture = data.list[i].wind.speed;
+                  
+                    // Update the HTML elements with the data
+                    document.getElementById(dateId).textContent = conditionFuture;
+                    var futureIconUrl = "https://openweathermap.org/img/wn/"+ iconFuture +"@2x.png"
+                    document.getElementById(iconId).setAttribute("src", futureIconUrl);
+                    // document.getElementById(iconId).src = iconFuture;
+                    document.getElementById(tempId).textContent ="temp: "+ tempFuture, "F";
+                    document.getElementById(humidId).textContent ="humidity: "+ humidFuture+ "%";
 
-                console.log(conditionFuture);
+                // for (var i =7; i<36; i+=7) {
+                    
+                // var conditionFuture = data.list[i].weather[0].description;
+                // var iconFuture = data.list[i].weather[0].icon;
+                // var humidFuture = data.list[i].main.humidity;
+                // var tempFuture = data.list[i].main.temp;
+                // var windFuture = data.list[i].wind.speed;
+
+                // console.log(conditionFuture);
 
 
 

@@ -38,6 +38,15 @@ main {
 
 }
 
+
+
 #future-container {
-    border: solid blue;        
+    display: flex;
+    flex-direction: row;
+    border: solid black;
+}
+
+.future-card {
+    padding: 20px;
+    border: solid pink;
 }
