@@ -9,15 +9,56 @@
 <body>
     <h1 id="title" >Weather Dashboard</h1>
     <main>
-        <h2 id="current-city">current city
-            <i>icon image</i>
-        </h2>
+        <div id="current-weather-container">
+            <h2 id="current-city"></h2>
+            <h2 id="todays-date"></h2>
+            <p id = "description"></p>
+            <img id = "icon">
+            <ul id="temp-wind-humid">
+                <li id="temperature"></li>
+                <li id = "humidity"></li>
+                <li id="wind-speed"></li>
+            </ul>
+            
+        </div>
+        <div id = "future-container">
+            <div class="future-card">
+                <p class = "future-date" id = "future-date-1"></p>
+                <img id = "future-icon-1" src="" alt="">
+                <p class = "future-temp" id = "future-temp-1"></p>
+                <p class = "future-humidity" id = "future-humid-1"></p>
+            </div>
+            <div class="future-card">
+                <p class = "future-date" id = "future-date-2"></p>
+                <img id = "future-icon-2" src="" alt="">
+                <p class = "future-temp" id = "future-temp-2"></p>
+                <p class = "future-humidity" id = "future-humid-2"></p>
+            </div>  
+            <div class="future-card">
+                <p class = "future-date" id = "future-date-3"></p>
+                <img id = "future-icon-3" src="" alt="">
+                <p class = "future-temp" id = "future-temp-3"></p>
+                <p class = "future-humidity" id = "future-humid-3"></p>
+            </div>
+            <div class="future-card">
+                <p class = "future-date" id = "future-date-4"></p>
+                <img id = "future-icon-4" src="" alt="">
+                <p class = "future-temp" id = "future-temp-4"></p>
+                <p class = "future-humidity" id = "future-humid-4"></p>
+            </div>
+            <div class="future-card">
+                <p class = "future-date" id = "future-date-5"></p>
+                <img id = "future-icon-5" src="" alt="">
+                <p class = "future-temp" id = "future-temp-5"></p>
+                <p class = "future-humidity" id = "future-humid-5"></p>
+            </div>
+        </div>
     
     </main>
     <aside>
         <div id="search">
             <h2>Search For A City</h2>
-            <input id="search-bar" type="text" placeholder="San Diego">
+            <input id="search-bar" type="text" placeholder="City name">
             <button id="search-btn">Search</button>
         </div>
         <div id="search-hist">
