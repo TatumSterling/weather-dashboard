@@ -69,7 +69,7 @@ function renderLastCity() {
 // putting it all together, fetching the data from the weather api
 var convertToCoord = function (city) {
     console.log("parameter", city)
-    var apiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=5&appid=4b6fcde070c0b9b25bca1edc64948080";
+    var apiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=5&appid=4b6fcde070c0b9b25bca1edc64948080";
 
     fetch(apiUrl).then(function (result) {
         if (result.ok) {
